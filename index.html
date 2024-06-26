@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLOW</title>
+    <meta name="robots" content="All" />
+    <meta name="Yeti" content="index, follow" />
+    <meta name="Yeti" content="All" />
+    <meta name="googlebot" content="All" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="daumoa" content="All" />
+    <meta name="daumoa" content="index, follow" />
+    <meta name="title" content="디자이너 - 박재우 포트폴리오" />
+    <meta
+      name="description"
+      content="디자이너 박재우입니다. 포트폴리오 방문을 환영"
+    />
+    <meta
+      name="keywords"
+      content="웹디자이너, 웹퍼블리셔, 모션그래픽 디자이너"
+    />
+    <meta name="author" content="박재우" />
+    <meta name="content-language" content="kr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FLOW" />
+    <meta property="og:title" content="FLOW" />
+    <meta property="og:description" content="Project: FLOW" />
+    <meta property="og:image" content="images/site cover.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+
+    <!-- 홈페이지 아이콘 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- 스크롤러 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <!-- 슬라이드 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/5ebb5ca82f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style.css, main.js 연결 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/main.js" defer></script>
+
+    <!-- youtube 라이브러리 -->
+    <script src="http://www.youtube.com/player_api"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 메인 배경 -->
+      <div class="main_bg">
+        <video id="videobcg" loop muted autoplay playsinline class="video_w">
+          <source src="videos/visual.mp4" />
+        </video>
+      </div>
+      <!-- 메인 화면 -->
+      <div class="box main">
+        <section class="scene one">
+          <!-- 라인 + 플로팅 로고(메인) -->
+          <div
+            class="vertical line"
+            data-0="top:-20%; right:84%;"
+            data-832="top:0%; right:84%;"
+          ></div>
+          <div
+            class="horizontal line"
+            data-0="top:7%; left:-35%;"
+            data-832="top:7%; left:40%;"
+          ></div>
+          <div
+            class="logo"
+            data-0="top: 5%; left: 5%;"
+            data-832="top: 5%; left: 3%;"
+          >
+            <h1
+              data-0="font-size:3rem;"
+              data-832="font-size:0.5rem;"
+              id="main1_btn"
+            >
+              FLOW
+            </h1>
+          </div>
+          <!-- 하단 메뉴 -->
+          <div class="menu_box">
+            <ul>
+              <li id="web_btn">Web/Graphics</li>
+              <li id="mt_btn">Motion</li>
+              <li class="main_trigger">Contact</li>
+            </ul>
+          </div>
+        </section>
+        <!-- main 팝업 메뉴 -->
+        <!-- 임시 필터 기능 -->
+        <!-- <div class="filter">
+          <ul>
+            <li class="red">R</li>
+            <li class="green">G</li>
+            <li class="blue">B</li>
+          </ul>
+        </div> -->
+        <nav class="close"><p>Go to Main</p></nav>
+        <section class="scene_one POP">
+          <div class="first_wrap">
+            <h1>Contact</h1>
+            <div class="profile">
+              <div class="profile_info">
+                <h1>Profile Info</h1>
+                <h2>이름 적는 곳</h2>
+                <p>간단한 소개글</p>
+                <p>경력 정보</p>
+                <p>자격증 정보</p>
+                <p>이메일 주소 / SNS 입력란</p>
+              </div>
+              <div class="profile_card"></div>
+            </div>
+            <div class="profile_logo">
+              <span><img src="images/3D-Instagram-logo-PNG.png" alt="" /></span>
+              <span><img src="images/3D-Instagram-logo-PNG.png" alt="" /></span>
+              <span><img src="images/3D-Instagram-logo-PNG.png" alt="" /></span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- scene2 -->
+      <div class="box scene2">
+        <section class="scene two">
+          <!-- 타이틀 -->
+          <div class="title">
+            <h1>portfolio</h1>
+          </div>
+          <!-- 포트폴리오 영역 -->
+          <div class="slider_box">
+            <!-- 상단 웹 포트폴리오: 클릭으로 반응-->
+            <div class="main_slider">
+              <div class="web">
+                <img src="images/w2.png" alt="안내문구1" />
+                <p>안내문구1</p>
+              </div>
+              <div class="web">
+                <img src="images/w1.png" alt="안내문구2" />
+                <p>안내문구2</p>
+              </div>
+              <div class="web">
+                <img src="images/w4.png" alt="안내문구3" />
+                <p>안내문구3</p>
+              </div>
+            </div>
+            <!-- 하단 디자인 슬라이드 영역 -->
+            <div class="sub_slider">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/w1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w3.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w4.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w5.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w6.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w7.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/w2.png" alt="" />
+                  </div>
+                </div>
+                <div class="custom-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 사이드 네이게이션 -->
+          <div class="side_menu">
+            <ul>
+              <li id="main_btn">Main</li>
+              <li id="next_btn">Next</li>
+            </ul>
+          </div>
+        </section>
+        <!-- scene2 웹 포트폴리오 팝업 -->
+        <section class="scene two POP">
+          <div class="second_wrap">
+            <!-- 제이쿼리로 이미지 대체 -->
+            <div class="close sect"></div>
+            <div class="img_wrap">
+              <img src="images/w2.png" alt="썸네일" />
+              <a href="http://www.naver.com" target="_blank"><p>Visit.</p></a>
+              <div class="img_cover">
+                <!-- 인포 박스 -->
+                <div class="img_info">
+                  <ul>
+                    <li>
+                      <h1>Vancouver</h1>
+                      <p>
+                        <br /><br /><br /><br /><br />
+                        2024.06.18 / 7days<br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        세부 분류 (카피, 창작 등) <br />
+                        나머지 기타 정보
+                      </p>
+                    </li>
+                    <li>
+                      <h1>Frank Ocean<br /></h1>
+                      <p>
+                        <br /><br /><br /><br />
+                        2024.07.09 / 7days<br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        세부 분류 (카피, 창작 등) <br />
+                        나머지 기타 정보
+                      </p>
+                    </li>
+                    <li>
+                      <h1>Lovey Dovey<br /></h1>
+                      <p>
+                        <br /><br /><br /><br />
+                        2024.02.02 / 7days<br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        세부 분류 (카피, 창작 등) <br />
+                        나머지 기타 정보
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- scene3 -->
+      <div class="box scene3">
+        <section class="scene three">
+          <!-- 타이틀 -->
+          <div class="title">
+            <h1>portfolio</h1>
+          </div>
+          <!-- 포트폴리오 영역 -->
+          <div class="slider_box">
+            <div class="album">
+              <!-- 메인 슬라이드 -->
+              <div class="album_main">
+                <div class="cover">
+                  <!-- LP판 이미지 -->
+                  <img src="images/LP-rotate.gif" alt="LP rotate" />
+                  <!-- 재생 버튼 - 팝업 트리거-->
+                  <i class="fa-solid fa-circle-play scene3_trigger"></i>
+                  <!-- 메인 슬라이드 -->
+                  <div class="swiper mySwipers">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/w1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/w3.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/w4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/w7.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                      <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- 우측 레터박스 -->
+                <div class="letterBox">
+                  <ul>
+                    <li class="on">
+                      <h1>INFO BOX</h1>
+                      <p>
+                        Vancouver<br />
+                        <a
+                          href="https://www.youtube.com/watch?v=jy8eGRwI9h8"
+                          target="_blank"
+                          >사이트 이동</a
+                        ><br />
+                        <br />
+                        <br />
+
+                        2024.06.18 / 7days<br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        좌측 PLAY 버튼 click 시 팝업 <br />
+                        나머지 는 display: none;
+                      </p>
+                    </li>
+                    <li>
+                      <h1>INFO BOX</h1>
+                      <p>
+                        Lovey Dovey (Feat. meenoi)<br />
+                        <a
+                          href="https://www.youtube.com/watch?v=upFq6ss6Q54"
+                          target="_blank"
+                          >사이트 이동</a
+                        ><br />
+                        <br />
+                        <br />
+
+                        제작 시기, 소요 시간<br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        1111111111
+                      </p>
+                    </li>
+                    <li>
+                      <h1>INFO BOX</h1>
+                      <p>
+                        Frank Ocean (Feat. SOLE)<br />
+                        <a
+                          href="https://www.youtube.com/watch?v=tmnxdVfJSj4"
+                          target="_blank"
+                          >사이트 이동</a
+                        ><br />
+                        <br />
+                        <br />
+
+                        제작 시기, 소요 시간<br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        2222222222
+                      </p>
+                    </li>
+                    <li>
+                      <h1>INFO BOX</h1>
+                      <p>
+                        Joker (Feat. JAMIE)<br />
+                        <a
+                          href="https://www.youtube.com/watch?v=EIX03rZgPfY"
+                          target="_blank"
+                          >사이트 이동</a
+                        ><br />
+                        <br />
+                        <br />
+
+                        제작 시기, 소요 시간<br />
+                        레퍼런스, 기타 정보 기술 <br />
+                        3333333333
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 사이드 네비게이션 -->
+          <div class="side_menu">
+            <ul>
+              <li id="prev_btn">Prev</li>
+              <li id="main2_btn">Main</li>
+            </ul>
+          </div>
+        </section>
+        <!-- scene3 메인 슬라이드 팝업 -->
+        <section class="scene three POP">
+          <div class="third_wrap">
+            <h1 class="close">- CLOSE -</h1>
+            <!-- 제이쿼리로 재생/정지 시 id 값, enablejsapi=1 -->
+            <div class="video active">
+              <iframe
+                id="ytVideo"
+                width="1292"
+                height="727"
+                src="https://www.youtube.com/embed/jy8eGRwI9h8?wmode=opaque&autohide=1&enablejsapi=1"
+                title="BIG Naughty (서동현) - Vancouver [Lovey Dovey]ㅣLyrics/가사"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video">
+              <iframe
+                id="ytVideo"
+                width="1292"
+                height="727"
+                src="https://www.youtube.com/embed/upFq6ss6Q54?wmode=opaque&autohide=1&enablejsapi=1"
+                title="BIG Naughty (서동현) - Lovey Dovey (Feat. meenoi) (Official Audio)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video">
+              <iframe
+                id="ytVideo"
+                width="1292"
+                height="727"
+                src="https://www.youtube.com/embed/tmnxdVfJSj4?wmode=opaque&autohide=1&enablejsapi=1"
+                title="BIG Naughty(서동현) - Frank Ocean (Feat. SOLE) (Prod. Cosmic Boy) / 가사(Lyrics)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video">
+              <iframe
+                id="ytVideo"
+                width="1292"
+                height="727"
+                src="https://www.youtube.com/embed/EIX03rZgPfY?wmode=opaque&autohide=1&enablejsapi=1"
+                title="BIG Naughty (서동현) - Joker (Feat. JAMIE) [Bucket List]ㅣLyrics/가사"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- 하단부터 스크립트 영역 -->
+    <!-- scene2 서브 슬라이드 -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".custom-pagination",
+          type: "custom",
+          renderCustom: function (swiper, current, total) {
+            const fillPer = (current / total) * 100;
+            const fillWidth = fillPer + "%;";
+            return (
+              '<strong><span class="current">0' +
+              current +
+              '</span><div class="progress__bar"><span class="progress__fill" style="width:' +
+              fillWidth +
+              '"></span></div><span>0' +
+              total +
+              "</strong></span>"
+            );
+          },
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <!-- scene3 메인 슬라이드 -->
+    <script>
+      var swipers = new Swiper(".mySwipers", {
+        effect: "cube",
+        grabCursor: true,
+        mouseWheel: false,
+        allowTouchMove: false,
+        loop: false,
+        autoplay: false,
+        centeredSlides: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          // scene3 메인 슬라이드 구현
+        },
+        on: {
+          slideChange: function () {
+            const idx = this.activeIndex;
+            $(".letterBox li").removeClass("on");
+            $(".letterBox li").eq(idx).addClass("on");
+            $(".third_wrap .video").removeClass("active");
+            $(".third_wrap .video").eq(idx).addClass("active");
+          },
+        },
+      });
+    </script>
+    <!-- 스크롤러 이벤트 -->
+    <script>
+      skrollr.init((smoothScrolling = true));
+    </script>
+  </body>
+</html>
