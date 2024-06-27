@@ -486,14 +486,37 @@ $(document).keydown(function (exit) {
   }
 });
 
-// // invert 구현 - 임시 구현
+// 클릭 효과
 
-// $(".red").click(function () {
-//   $(".container").css("background-color", "red");
-// });
-// $(".blue").click(function () {
-//   $(".container").css("background-color", "blue");
-// });
-// $(".green").click(function () {
-//   $(".container").css("background-color", "green");
-// });
+function clickEffect(e) {
+  var d = document.createElement("div");
+  d.className = "clickEffect";
+  d.style.top = e.clientY + "px";
+  d.style.left = e.clientX + "px";
+  document.body.appendChild(d);
+  d.addEventListener(
+    "animationend",
+    function () {
+      d.parentElement.removeChild(d);
+    }.bind(this)
+  );
+}
+document.addEventListener("click", clickEffect);
+
+// 반응형 구현
+
+$(window).resize(function () {
+  if ($(window).width() < 1600) {
+    // window 크기가 1600보다 작을때
+  } else if ($(window).width() < 1200) {
+    // window 크기가 1200보다 작을 때
+  } else if ($(window).width() < 960) {
+    // window 크기가 960보다 작을 때
+  } else if ($(window).width() < 760) {
+    // window 크기가 760보다 작을 때
+  } else if ($(window).width() < 480) {
+    // window 크기가 480보다 작을 때
+  } else if ($(window).width() < 320) {
+    // window 크기가 480보다 작을 때
+  }
+});

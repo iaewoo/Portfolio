@@ -75,6 +75,23 @@
   }
 }
 
+@keyframes clickEffect {
+  0% {
+    opacity: 1;
+    width: 0.5em;
+    height: 0.5em;
+    margin: -0.25em;
+    border-width: 0.5em;
+  }
+  100% {
+    opacity: 0.2;
+    width: 15em;
+    height: 15em;
+    margin: -7.5em;
+    border-width: 0.03em;
+  }
+}
+
 /* 사전 설정 */
 ::-webkit-scrollbar {
   display: none;
@@ -174,15 +191,30 @@ section {
 .side_menu ul li {
   font-family: "nixie";
   font-size: 1.5rem;
-  text-shadow: 0px 0px 20px #fffbef;
+  text-shadow: 0px 0px 20px #eff7ff;
   opacity: 0.8;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
 }
 
 .side_menu ul li:hover {
   opacity: 1;
 }
 
+/* 마우스 효과 */
+div.clickEffect {
+  position: fixed;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  animation: clickEffect 0.4s ease-out;
+  z-index: 99999;
+}
+
+/* 커서 모양 */
+* {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto;
+}
 /* ------------------main box------------------ */
 
 .main {
@@ -214,7 +246,6 @@ section {
 
 .logo {
   position: fixed;
-  cursor: pointer;
   animation: animation_scale_up 1.5s ease-out forwards;
   transform-origin: 0 0;
   margin: 0;
@@ -223,7 +254,7 @@ section {
 
 .logo h1 {
   display: block;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
   font-family: "CANAVAR";
   color: white;
   text-shadow: 0.5px 1px 1px rgba(255, 255, 255, 0.5);
@@ -256,7 +287,7 @@ section {
   font-size: 3rem;
   text-shadow: 0px 0px 20px #fffbef;
   opacity: 0.8;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
   transition: all 1s;
 }
 
@@ -300,7 +331,7 @@ section {
   width: 30%;
   transition: all 0.5s;
   opacity: 0.5;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
   position: relative;
   z-index: 10;
 }
@@ -313,7 +344,7 @@ section {
   font-size: 3rem;
   font-family: "nanum";
   font-weight: bold;
-  color: #ffccb8;
+  color: #333;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
   opacity: 0;
   transition: all 0.1s;
@@ -337,6 +368,7 @@ section {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
 }
 
 /* 서브 슬라이더 */
@@ -360,7 +392,7 @@ section {
 .swiper-slide {
   width: 100%;
   height: 100%;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
 }
 
 .swiper-slide img {
@@ -477,7 +509,7 @@ section {
   position: absolute;
   top: 88%;
   z-index: 1;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,6 +524,7 @@ section {
 
 .cover i {
   font-size: 2rem;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
 }
 
 .cover > i {
@@ -501,7 +534,6 @@ section {
   transform: translateX(-50%);
   z-index: 2;
   font-size: 5rem;
-  cursor: pointer;
 }
 
 .cover i:hover {
@@ -560,13 +592,18 @@ section {
   left: -20%;
   font-family: "nixie";
   font-size: 2.5rem;
-  cursor: pointer;
+
   text-shadow: 0px 0px 10px #fffbef;
   opacity: 0.8;
 }
 
+.close p {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
+}
+
 .main .close:hover {
   opacity: 1;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
 }
 
 .POP {
@@ -765,6 +802,7 @@ section {
   opacity: 0.8;
   z-index: 103;
   transition: all 0.25s;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
 }
 
 .second_wrap .img_wrap p:hover {
@@ -805,7 +843,7 @@ section {
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), auto !important;
   text-shadow: 0px 0px 10px #fffbef;
   opacity: 0;
   font-weight: lighter;
@@ -846,37 +884,3 @@ section {
   display: block;
   opacity: 1;
 }
-
-/* ---------------임시 */
-
-/* .one {
-  position: relative;
-}
-
-.filter {
-  position: absolute;
-  top: 10%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: black;
-  cursor: pointer;
-  font-family: "nixie";
-  font-weight: bold;
-}
-
-.filter ul {
-  display: flex;
-  width: 400px;
-  justify-content: space-between;
-}
-
-.filter ul li:nth-child(1) {
-  color: red;
-}
-.filter ul li:nth-child(2) {
-  color: blue;
-}
-.filter ul li:nth-child(3) {
-  color: green;
-} */
